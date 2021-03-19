@@ -25,7 +25,7 @@
 
       <v-btn
         class="text-small-devices"
-        href="https://github.com/diasor/memory-game-v2"
+        href="https://github.com/diasor/basic-shopping-cart"
         target="_blank"
         text
       >
