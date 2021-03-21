@@ -16,7 +16,8 @@
 				>
 					<v-skeleton-loader
 						v-bind="attrs"
-						type="list-item-avatar, list-item-three-line, actions"
+						class="mt-10"
+						type="list-item-three-line, actions"
 					></v-skeleton-loader>
 				</v-col>
 				<v-col

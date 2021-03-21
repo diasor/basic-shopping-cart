@@ -1,12 +1,12 @@
 <template>
-	<div class="home">
+	<div data-testid="home-container">
 		<v-row justify="space-between">
 			<v-col
 				cols="12"
 				sm="6"
 				md="8"
 			>
-				<product-skeleton v-if="loading"/>
+				<product-skeleton v-if="loadSkeleton"/>
 				<product-form v-else/>
 			</v-col>
 			<v-col
@@ -21,9 +21,9 @@
 
 <script>
 import { mapGetters, mapActions } from "vuex"
-import ProductForm from "@/components/ProductForm.vue"
-import ProductSkeleton from "@/components/ProductSkeleton.vue"
-import ProductList from "@/components/ProductList.vue"
+import ProductForm from "@components/ProductForm.vue"
+import ProductSkeleton from "@components/ProductSkeleton.vue"
+import ProductList from "@components/ProductList.vue"
 
 export default {
 	name: "Home",
@@ -35,11 +35,15 @@ export default {
 	},
 	
 	computed: {
-		...mapGetters(["loading"])
+		...mapGetters(["loading"]),
+
+		loadSkeleton () {
+			return this.loading
+		}
 	},
 
-	created () {
-		this.getProducts()
+	async created () {
+		await this.getProducts()
 	},
 
 	methods: {

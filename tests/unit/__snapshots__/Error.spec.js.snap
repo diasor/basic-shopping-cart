@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing Error Template should render the page and match the snapshot 1`] = `
+<div class="mx-auto mt-10 v-card v-sheet theme--light" style="max-width: 80%;" justify="center" data-testid="error-card">
+  <div class="v-card__title">
+    Ooops! An error has occured.
+  </div>
+  <div class="v-card__subtitle">
+    Please try again.
+  </div>
+  <div class="v-card__actions"><button type="button" class="v-btn v-btn--text theme--light v-size--default" style="caret-color: #8d010d lighten-2;" data-testid="back-home-button"><span class="v-btn__content">
+			Try Again
+			<i aria-hidden="true" class="v-icon notranslate ml-4 fas fa-circle-notch fa-spin theme--light"></i></span></button></div>
+</div>
+`;

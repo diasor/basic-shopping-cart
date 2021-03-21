@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing Home Template should render the page and match the snapshot 1`] = `
+<div data-testid="home-container">
+  <v-row-stub tag="div" justify="space-between">
+    <v-col-stub cols="12" sm="6" md="8" tag="div">
+      <product-form-stub></product-form-stub>
+    </v-col-stub>
+    <v-col-stub cols="6" md="4" tag="div">
+      <product-list-stub></product-list-stub>
+    </v-col-stub>
+  </v-row-stub>
+</div>
+`;
+
+exports[`testing Home Template when the application is loading (show skeleton form) should render the page and match the snapshot 1`] = `
+<div data-testid="home-container">
+  <v-row-stub tag="div" justify="space-between">
+    <v-col-stub cols="12" sm="6" md="8" tag="div">
+      <product-skeleton-stub></product-skeleton-stub>
+    </v-col-stub>
+    <v-col-stub cols="6" md="4" tag="div">
+      <product-list-stub></product-list-stub>
+    </v-col-stub>
+  </v-row-stub>
+</div>
+`;

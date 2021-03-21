@@ -1,4 +1,5 @@
-let productApplication;
+	/*eslint-disable */
+let productApplication
 
 (function () {
 	var data = [
@@ -96,7 +97,7 @@ let productApplication;
     if (!cb) {
 		throw new Error("Callback not defined")
     }
-    setTimeout(function() {
+    setTimeout(function () {
       if (Math.floor(Math.random() * 20) === 2) {
         cb('Fetch data error')
       } else {

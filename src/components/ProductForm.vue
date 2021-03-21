@@ -7,7 +7,6 @@
 	>
 
 		<v-card-title class="pa-0">Product </v-card-title>
-
 		<v-form
 			ref="form"
 			v-model="valid"
@@ -53,28 +52,31 @@
 							v-if="product.img"
 							:src="productImage"
 							max-height="300"
+							class="mr-10"
 							contain
 						/>
 					</v-row>
 				</v-col>
 			</v-row>
 
-			<v-btn
-				:disabled="!valid"
-				color="success"
-				class="mr-4"
-				@click="validate"
-			>
-				Add to Cart
-			</v-btn>
+			<v-row class="mt-6">
+				<v-btn
+					:disabled="!valid"
+					color="success"
+					class="mr-4"
+					@click="validate"
+				>
+					Add to Cart
+				</v-btn>
 
-			<v-btn
-				color="error"
-				class="mr-4"
-				@click="reset"
-			>
-				Reset Form
-			</v-btn>
+				<v-btn
+					color="error"
+					class="mr-4"
+					@click="reset"
+				>
+					Reset Form
+				</v-btn>
+			</v-row>
 		</v-form>
 	</v-card>
 </template>
