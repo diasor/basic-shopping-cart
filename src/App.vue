@@ -19,10 +19,6 @@
        </v-tooltip>
       <v-spacer></v-spacer>
 
-      <v-btn @click="goToAbout" text>
-        <span>About</span>
-      </v-btn>
-
       <v-btn
         class="text-small-devices"
         href="https://github.com/diasor/basic-shopping-cart"
@@ -53,10 +49,6 @@ export default {
 
     gotToInstructionMenu () {
       this.$router.push({ path: "/instructions" })
-    },
-
-    goToAbout () {
-      this.$router.push({ path: "/about" })
     }
   }
 }
