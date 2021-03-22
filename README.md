@@ -28,15 +28,15 @@ The application provides the following interfaces:
     - when selecting an option in on of the list, the other lists are filtered accordingly.
     - at the bottom of the form all selections will be shown.
 
-	<img src="public/documentation/product-form-lg.png"  style="border-radius:5px; margin: 20px 5px;"/>
+	<img src="public/documentation/product-form-lg.png"  style="border-radius:5px; margin: 20px 5px; margin-top: 5px;"/>
 
 	The form also: 
 	- is responsive
 	- contains validations. If the required fields are missing, then the "add to cart" button is disabled.
 	
-	<img src="public/documentation/product-form-sm.png" width="309" height="440" style="border-radius:5px" />
+	<img src="public/documentation/product-form-sm.png" width="309" height="440" style="border-radius:5px; margin-top: 5px;" />
 
-	<img src="public/documentation/product-form-validations.png" width="309" height="440" style="border-radius:5px; margin-left:10px;"/>
+	<img src="public/documentation/product-form-validations.png" width="309" height="440" style="border-radius:5px; margin-left:10px; margin-top: 5px;"/>
 
 	
 * The **Product List** is a component where the user can see all the products already entered via the previous form, into the shopping cart. Every new item is entered on top of the previous list.
